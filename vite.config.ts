@@ -22,4 +22,10 @@ export default defineConfig({
       dts: 'src/components.d.ts',
     })
   ],
+  test: {
+    coverage: {
+      include: ['src/**'],
+      reporter: ['html'],
+    },
+  },
 })
